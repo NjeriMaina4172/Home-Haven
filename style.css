@@ -464,24 +464,15 @@ html{
 }
 
 .achievements .inner-achievements1{
-    margin-top: 5px;
-    margin-left: 15%;
-    justify-content: center;
     display: flex;
     flex-direction: column;
 }
 .achievements .inner-achievements2{
-    margin-top: 5px;
-    margin-left: 20%;
-    justify-content: center;
     display: flex;
     flex-direction: column;
 }
 
 .achievements .inner-achievements3{
-    margin-top: 5px;
-    margin-left: 20%;
-    justify-content: center;
     display: flex;
     flex-direction: column;
 }
@@ -494,36 +485,39 @@ html{
     color: #ff5d22;
     transition: .3s;
     position: absolute;
-    margin-top: 5px;
+    margin-top: 50px;
+    left: 15%;
 }
 .achievements .inner-achievements2 i{
     font-size: 5rem;
     width: 7rem;
     height: 7rem;
-    border-radius: 50%;
+
     text-align: center;
     color: #ff5d22;
     transition: .3s;
     position: absolute;
-    margin-top: 30px;
+    margin-top: 50px;
+    left: 45%;
 }
 .achievements .inner-achievements3 i{
     font-size: 5rem;
     width: 7rem;
     height: 7rem;
-    border-radius: 50%;
-    color: #ff5d22;
+
     text-align: center;
+    color: #ff5d22;
     transition: .3s;
     position: absolute;
-    margin-top: 30px;
+    margin-top: 50px;
+    left: 75%;
 }
 .achievements .inner-achievements1 h1{
     color: white;
     position: relative;
     font-size: 70px;
     margin-top: 110px;
-    margin-left: 7%;
+    margin-left: 140px;
 }
 
 .achievements .inner-achievements2 h1{
@@ -531,7 +525,7 @@ html{
     position: relative;
     font-size: 70px;
     margin-top: 110px;
-    margin-left: 5%;
+    margin-left: 200px;
 }
 
 .achievements .inner-achievements3 h1{
@@ -539,24 +533,27 @@ html{
     position: relative;
     font-size: 70px;
     margin-top: 110px;
-    margin-left: 30%;
+    margin-left: 290px;
 }
 .achievements .inner-achievements1 h2{
     color: white;
     position: relative;
     font-size: 20px;
+    margin-left: 180px;
 
 }
 .achievements .inner-achievements2 h2{
     color: white;
     position: relative;
     font-size: 20px;
+    margin-left: 180px;
 
 }
 .achievements .inner-achievements3 h2{
     color: white;
     position: relative;
     font-size: 20px;
+    margin-left: 280px;
 
 }
 .why-us{
@@ -604,6 +601,21 @@ html{
     line-height: 1;
 
 }
+#myDiv {
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
 
+#myText {
+    font-size: 36px;
+    color: #003147;
+    text-align: center;
+    position: absolute;
+    margin-top: 50px;
+    left: 40%;
+    transform: translate(-50%, -50%);
+  }
 
 
