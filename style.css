@@ -31,9 +31,10 @@ html{
 .navbar a{
     color: #003147;
     font-weight: bolder;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-left: 2rem;
     position: relative;
+    gap: 4rem;
 }
 .navbar a:after{
     content: '';
@@ -443,7 +444,7 @@ html{
 .achievements{
     position: relative;
     display: flex;
-    margin-top: 20px;
+    margin-top: 30px;
     width: 100%;
     height: 250px;
     background-image: url(./Images/andre-adjahoe-tqunk3qB_yU-unsplash.jpg);
