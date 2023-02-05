@@ -440,3 +440,169 @@ html{
 .white{
     color: white;
 }
+.achievements{
+    position: relative;
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    height: 250px;
+    background-image: url(./Images/andre-adjahoe-tqunk3qB_yU-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.achievements::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #003147;
+    opacity: 0.9;
+}
+
+.achievements .inner-achievements1{
+    margin-top: 5px;
+    margin-left: 15%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.achievements .inner-achievements2{
+    margin-top: 5px;
+    margin-left: 20%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.achievements .inner-achievements3{
+    margin-top: 5px;
+    margin-left: 20%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.achievements .inner-achievements1 i{
+    font-size: 5rem;
+    width: 7rem;
+    height: 7rem;
+
+    text-align: center;
+    color: #ff5d22;
+    transition: .3s;
+    position: absolute;
+    margin-top: 5px;
+}
+.achievements .inner-achievements2 i{
+    font-size: 5rem;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    text-align: center;
+    color: #ff5d22;
+    transition: .3s;
+    position: absolute;
+    margin-top: 30px;
+}
+.achievements .inner-achievements3 i{
+    font-size: 5rem;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    color: #ff5d22;
+    text-align: center;
+    transition: .3s;
+    position: absolute;
+    margin-top: 30px;
+}
+.achievements .inner-achievements1 h1{
+    color: white;
+    position: relative;
+    font-size: 70px;
+    margin-top: 110px;
+    margin-left: 7%;
+}
+
+.achievements .inner-achievements2 h1{
+    color: white;
+    position: relative;
+    font-size: 70px;
+    margin-top: 110px;
+    margin-left: 5%;
+}
+
+.achievements .inner-achievements3 h1{
+    color: white;
+    position: relative;
+    font-size: 70px;
+    margin-top: 110px;
+    margin-left: 30%;
+}
+.achievements .inner-achievements1 h2{
+    color: white;
+    position: relative;
+    font-size: 20px;
+
+}
+.achievements .inner-achievements2 h2{
+    color: white;
+    position: relative;
+    font-size: 20px;
+
+}
+.achievements .inner-achievements3 h2{
+    color: white;
+    position: relative;
+    font-size: 20px;
+
+}
+.why-us{
+    padding: 4rem 7%;
+}
+.main-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.inner-us{
+    flex: 1 1 45rem;
+}
+.inner-us img{
+    width: 100%;
+    margin-left: 10px;
+}
+.inner-us h1{
+    font-size: 40px;
+    color: var(--main-color);
+}
+.main-inner-us{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+.us-icons i{
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    background: white;
+    color: var(--main-color);
+    font-size: 3rem;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.icon-content{
+    padding: 0 5rem;
+}
+.icon-content p{
+    font-size: 1.5rem;
+    line-height: 1;
+
+}
+
+
+
