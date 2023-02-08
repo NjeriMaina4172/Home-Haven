@@ -78,40 +78,65 @@ html{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
-.background-image{
-    background: url(./images/national-cancer-institute-L8tWZT4CcVQ-unsplash.jpg);
-    width: 100%;
-    height: 100vh;
+.background{
+    height: 550px;
+    background-image: url(./Images/national-cancer-institute-L8tWZT4CcVQ-unsplash.jpg);
+    background-position: center;
     background-size:cover;
     background-repeat: no-repeat;
     padding-top: 6%;
     position: relative;
 }
-.background-content{
-    position: absolute;
-    top: 30%;
-    left: 40%;
-    width:50;
-    transform: translate(-80%);
+.background h1{
+    color: #003147;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 200px;
+    margin-left: 100px;
+}
+.about{
+    padding: 3rem 7%;
+    background: #f2f2f2;
+}
+.main-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.inner-about{
+    flex: 1 1 45rem;
+}
+.inner-about .inner-about-image img{
+    width: 100%;
+    margin-top: 50px;
+}
+.about-content{
+    width: 80%;
 }
 
-.container{
-    position: relative;
-    background-image: url(./Images/walter-otto-PT70CT6mATQ-unsplash.jpg);
-    background-size: cover;
-    height: 400px;
-    width: 400px;
-    background-color: white;
+.about-content p{
+    font-size: 1.7rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    line-height: 2rem;
+    margin-bottom: 30px;
+    text-transform: none;
+    margin-top: 20px;
 }
-.overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+.about-content .buttons{
+    display:flex;
+    justify-content: space-between;
+}
+.about-content a{
     background-color: #003147;
-    display: none;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    color: white;
+    transition: .2s;
 }
-.container:hover .overlay{
-    display: block;
+.about-content a:hover{
+    background: transparent;
+    border: 1px solid var(--secondary-color);
+    color: black;
 }

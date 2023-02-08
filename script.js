@@ -175,37 +175,42 @@ innerServiceCon2.addEventListener('mouseout', function() {
   serviceIcon2.style.display = 'block';
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    window.addEventListener("scroll", function() {
+      var achievement = document.querySelector(".inner-achievements1");
+      var achievementPosition = achievement.getBoundingClientRect().top;
+      var screenPosition = window.innerHeight / 1.5;
+
+      if (achievementPosition < screenPosition) {
+        var number1 = document.getElementById("number1");
+        var currentNumber = 0;
+        var targetNumber = 100000;
+        var interval = setInterval(function() {
+          currentNumber += 1000;
+          number1.innerHTML = currentNumber;
+          if (currentNumber >= targetNumber) {
+            clearInterval(interval);
+          }
+        }, 100);
+      }
+    });
+  });
 
 
 
+  const slides = document.querySelectorAll(".slide");
+  let index = 0;
 
+  function showSlide() {
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slides[index].style.display = "flex";
+    index++;
+    if (index >= slides.length) {
+      index = 0;
+    }
+  }
 
-
-
-
-const myDiv = document.querySelector("#myDiv");
-const myText = document.querySelector("#myText");
-
-const images = [
-  "./Images/image1.jpg",
-  "./Images/image2.jpg",
-  "./Images/image3.jpg",
-  "./Images/image4.jpg"
-];
-
-const texts = [
-  "I've been using this home haven services for a few months now and I have to say, I'm impressed.The doctors and therapists are knowledgeable and always go above and beyond to make sure I receive the best possible care. The website is user-friendly and makes scheduling appointments a breeze.I highly recommend this service to anyone who needs medical attention in the comfort of their own home",
-  "My little one was suffering from a speech delay and we were recommended to try Home Haven. The speech therapist was amazing and my child has made significant progress. The comfort of receiving quality therapy in our own home has been a game-changer. I highly recommend this service to any parent in need of therapy services for their child.",
-  "As a senior citizen, I was hesitant about receiving medical care at home. But after trying their services, I have to say I'm pleasantly surprised. The healthcare professionals are very kind. I'm glad I can receive quality medical care without leaving my home. I highly recommend this service to anyone in need.",
-  "I was recently in an accident and needed physical therapy. I was pleased to learn about this home haven and gave it a try. The therapists were very patient and the exercises they gave me helped me recover faster than I expected. I'm grateful for the convenience and quality of care I received. I highly recommend their services"
-];
-
-let currentIndex = 0;
-
-function changeBackground() {
-  myDiv.style.backgroundImage = `url(${images[currentIndex]})`;
-  myText.innerText = texts[currentIndex];
-  currentIndex = (currentIndex + 1) % images.length;
-}
-
-setInterval(changeBackground, 3000);
+  showSlide();
+  setInterval(showSlide, 8000);
