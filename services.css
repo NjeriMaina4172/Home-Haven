@@ -94,3 +94,321 @@ html{
     margin-top: 200px;
     margin-left: 100px;
 }
+.our-services{
+    padding: 4rem 7%;
+    background: linear-gradient(to left, #ffffff, #f2f9fc);
+}
+.service-content{
+    text-align: center;
+}
+.service-content a{
+    font-size: 40px;
+    color: #003147;
+}
+.service-content p{
+    text-transform: none;
+
+}
+.main-services{
+    padding: 6rem 0;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+
+.inner-services-content{
+    flex: 2 2 250px;
+    padding: 10rem 1rem;
+    text-align: center;
+    background-color:white;
+    box-shadow: 2px 2px 5px #003147;
+
+}
+.inner-services-content1{
+    flex: 2 2 250px;
+
+    padding: 10rem 1rem;
+    text-align: center;
+    background-color: white;
+    box-shadow: 2px 2px 5px #003147;
+
+}
+.inner-services-content2{
+    flex: 2 2 250px;
+    padding: 10rem 1rem;
+    text-align: center;
+    background-color: white;
+    box-shadow: 2px 2px 5px #003147;
+
+
+}
+.inner-services-content:hover{
+    transform:scale(1.05);
+    background-image: url(./Images/walter-otto-PT70CT6mATQ-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    transform:scale(1.05);
+
+
+}
+.inner-services-content:hover:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:#ff5d22;
+    opacity: 0.9;
+
+}
+.inner-services-content1:hover{
+    transform:scale(1.05);
+    background-image: url(./Images/roberto-sorin-RS0-h_pyByk-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    transform:scale(1.05);
+}
+.inner-services-content1:hover:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #003147;
+    opacity: 0.9;
+}
+.inner-services-content2:hover{
+    transform:scale(1.05);
+    background-image: url(./Images/national-cancer-institute-w7Pby5bDKW4-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    transform:scale(1.05);
+}
+.inner-services-content2:hover:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:#ff5d22;
+    opacity: 0.9;
+}
+
+
+.inner-services-content h2{
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+    color: #003147;
+    position: relative;
+}
+.inner-services-content1 h2{
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+    color: #003147;
+    position: relative;
+}
+.inner-services-content2 h2{
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+    color: #003147;
+    position: relative;
+}
+
+.inner-services-content .service-content p{
+    font-size: 17px;
+    color: #003147;
+    position: relative;
+    text-align: left;
+}
+.inner-services-content1 p{
+    font-size: 17px;
+    color: #003147;
+    position: relative;
+    text-transform: none;
+    text-align: left;
+}
+.inner-services-content2 p{
+    font-size: 17px;
+    color: #003147;
+    position: relative;
+    text-transform: none;
+    text-align: left;
+}
+.services-icon i{
+    font-size: 5rem;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 8rem;
+    color: white;
+    background: var(--main-color);
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: .3s;
+    position: absolute;
+    top: 0;
+    left:12%;
+    margin-top: 19px;
+}
+.services-icon1 i{
+    font-size: 5rem;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 8rem;
+    color: white;
+    background: var(--main-color);
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: .3s;
+    position: absolute;
+    top: 0;
+    left:45%;
+    margin-top: 19px;
+}
+.services-icon2 i{
+    font-size: 5rem;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 8rem;
+    color: white;
+    background: var(--main-color);
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: .3s;
+    position: absolute;
+    top: 0;
+    left:80%;
+    margin-top: 19px;
+}
+.services-icon i:hover{
+    color: white;
+    background: var(--main-color);
+    display: none;
+}
+.services-icon1 i:hover{
+    color: white;
+    background: var(--main-color);
+    display: none;
+}
+.services-icon2 i:hover{
+    color: white;
+    background: var(--main-color);
+    display: none;
+}
+.categories{
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    position: relative;
+    color: #003147;
+}
+.categories1{
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    position: relative;
+    color: #003147;
+}
+.categories2{
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    position: relative;
+    color: #003147;
+}
+.white{
+    color: white;
+    font-weight: bold;
+}
+.black{
+    color: black;
+    font-weight: bold;
+}
+.e-pharmacy{
+    width: 100%;
+    height: 500px;
+    background-image: url(./Images/alexander-grey-FEPfs43yiPE-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.pharmacy-content{
+    padding-top: 30px;
+}
+
+.pharmacy-content a{
+    background: var(--secondary-color);
+    padding: 1.5rem 3rem;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    transition: .5s;
+    margin-left: 50px;
+    border: 1px solid var(--secondary-color);
+}
+
+.pharmacy-text{
+    margin-top: 50px;
+}
+.pharmacy-text p{
+    margin-left: 50px;
+    font-size: 25px;
+    color: white;
+    text-transform: none;
+    line-height: 3rem;
+}
+.pharmacy-icon1{
+    margin-top: 85px;
+    position: absolute;
+}
+.pharmacy-icon2{
+    position: absolute;
+    margin-top: 85px;
+}
+.pharmacy-icon1 a{
+    background: transparent;
+    padding: 1.5rem 3rem;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    transition: .5s;
+    margin-left: 50px;
+    border: 1px solid var(--secondary-color);
+}
+.pharmacy-icon1 a:hover{
+    background: white;
+    color: black;
+    border: none;
+}
+.pharmacy-icon2 a{
+    background: transparent;
+    padding: 1.5rem 3rem;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    transition: .5s;
+    margin-left:900px;
+    border: 1px solid var(--secondary-color);
+
+}
+.pharmacy-icon2 a:hover{
+    background: white;
+    color:black;
+    border: none;
+}
