@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="account.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+
+    <header class="header">
+        <img src="./Images/Pink Simple Creative And Professional Medical Home Logo Design Template.png" id="logo" alt="">
+
+        <nav class="navbar">
+            <a href="./index.html">Home</a>
+            <a href="./aboutUs.html">About</a>
+            <a href="./services.html">Services</a>
+            <a href="#">Doctors</a>
+            <a href="#">Blog</a>
+            <a href="#">Join our caregivers</a>
+            <a href="./faq.html">FAQ</a>
+            <a href="#">Contact</a>
+
+        </nav>
+        <div class="icons">
+            <div id="menubar" class="Fas fa-bars"></div>
+        </div>
+
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Get Started</button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="#">Find a Doctor</a>
+                <a href="#">Patients account</a>
+                <a href="#">visit Our Pharmacy</a>
+                <a href="#">Make a Health Rental</a>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="background-image">
+        <div class="background-content">
+            <h1>Let Home Haven Take care of your health in a holistic approach</h1>
+
+        </div>
+
+        <div class="login-container">
+            <div id="main">
+                <h1>Sign In</h1>
+                <input id="email" type="email" placeholder="Email"></input>
+                <input id="password" type="password" placeholder="Password"></input>
+                <button id="submit">Login</button>
+                <p><span>or</span></p>
+                <button id="sign-up">Sign Up</button>
+            </div>
+
+
+            <div id="create-acct">
+                <h1>Create an Account</h1>
+                <input id="email-signup" type="text" placeholder="Email *"></input>
+                <input id="confirm-email-signup" type="email" placeholder="Confirm Email *"></input>
+
+                <input id="password-signup" type="password" placeholder="Password *"></input>
+
+                <input id="confirm-password-signup" type="password" placeholder="Confirm Password *"></input>
+                <button id="create-acct-btn">Create Account</button>
+                <button id="return-btn">Return to Login</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./account.js" type="module"></script>
+
+</body>
+</html>
