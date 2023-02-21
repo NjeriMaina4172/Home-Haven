@@ -31,9 +31,10 @@ html{
 .navbar a{
     color: #003147;
     font-weight: bolder;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-left: 2rem;
     position: relative;
+    gap: 5rem;
 }
 .navbar a:after{
     content: '';

@@ -30,7 +30,6 @@ html{
 }
 .navbar a{
     color: #003147;
-    font-weight: bolder;
     font-size: 1.8rem;
     margin-left: 2rem;
     position: relative;
@@ -92,87 +91,50 @@ html{
     color: #003147;
     font-weight: bold;
     font-size: 40px;
-    margin-top: 200px;
-    margin-left: 100px;
-}
-.about{
-    padding: 3rem 7%;
-    background: #f2f2f2;
-}
-.main-about{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-.inner-about{
-    flex: 1 1 45rem;
-}
-.inner-about .inner-about-image img{
-    width: 100%;
-    margin-top: 50px;
-}
-.inner-about h1{
-    font-size: 30px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    color: #003147;
+    margin-top: 150px;
     margin-left: 50px;
-    margin-top: 10px;
-}
-.inner-about p{
-    font-size: 1.9rem;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    line-height: 2rem;
-    margin-bottom: 30px;
-    text-transform: none;
-    margin-top: 20px;
-    margin-left: 30px;
-    color: #003147;
-}
-.about-content{
-    width: 80%;
+    position: relative;
 }
 
-.about-content p{
-    font-size: 1.9rem;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    line-height: 2rem;
-    margin-bottom: 30px;
-    text-transform: none;
-    margin-top: 20px;
-}
-.about-content .buttons{
-    display:flex;
-    justify-content: space-between;
-}
-.about-content a{
-    background-color: #003147;
-    padding: 1rem 3rem;
-    font-size: 1.5rem;
-    color: white;
-    transition: .2s;
-}
-.about-content a:hover{
-    background: transparent;
-    border: 1px solid var(--secondary-color);
-    color: black;
-}
-.inner-about .content{
+.container{
     display: flex;
     flex-direction: row;
-
+    position: relative;
 }
-.inner-about .batch{
-    display: flex;
+.accordions-setup{
+    display:flex;
     flex-direction: column;
-    justify-content: space-between;
-
 }
-
-.inner-about .batchy{
+.accordion{
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+.accordion-header{
+    background-color: #003147;
+    padding: 10px;
+    cursor:pointer;
+}
+.accordion-header h3{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 
+    gap: 20rem;
+    color: white;
+}
+.accordion-header .icon{
+    font-size: 20px;
+    color: white;
+}
+.accordion-content{
+    display: none;
+    padding: 30px;
+    background-color: #D9D9D9;
+    color: black;
+    font-size: 20px;
+    text-transform: none;
+    font-weight: bold;
+}
+.photo img{
+    width: 700px;
+    height: 700px;
+}
