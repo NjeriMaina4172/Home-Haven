@@ -74,7 +74,9 @@ html{
     background: transparent;
     border: 1px solid var(--secondary-color);
     transition: .2s;
+    color: #003147;
 }
+
 .navbar.active{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
@@ -114,101 +116,55 @@ html{
 .show {
     display: block;
 }
-
-.background{
-    height: 550px;
-    background-image: url(./Images/national-cancer-institute-L8tWZT4CcVQ-unsplash.jpg);
-    background-position: center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    padding-top: 6%;
+.contents{
     position: relative;
-}
-.background h1{
-    color: #003147;
-    font-weight: bold;
-    font-size: 40px;
-    margin-top: 200px;
-    margin-left: 100px;
-}
-.about{
-    padding: 3rem 7%;
-    background: #f2f2f2;
-}
-.main-about{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-.inner-about{
-    flex: 1 1 45rem;
-}
-.inner-about .inner-about-image img{
+    background-image: ;
     width: 100%;
-    margin-top: 50px;
+    height: 800px;
+    background-image: url(./Images/enric-moreu-rIymmvOq3P8-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
 }
-.inner-about h1{
-    font-size: 30px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    color: #003147;
+.contents::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #003147;
+    opacity: 0.9;
+}
+.appointments{
+    background-color: white;
+    border: transparent;
+    box-shadow: black;
+    position: absolute;
+    margin-top: 300px;
+    width: 300px;
     margin-left: 50px;
-    margin-top: 10px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+
 }
-.inner-about p{
-    font-size: 1.9rem;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    line-height: 2rem;
-    margin-bottom: 30px;
-    text-transform: none;
-    margin-top: 20px;
-    margin-left: 30px;
+.appointments .icons{
+
+    font-size: 80px;
+    margin-top: 50px;
+    margin-left: 70px;
     color: #003147;
-}
-.about-content{
-    width: 80%;
-}
-
-.about-content p{
-    font-size: 1.9rem;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    line-height: 2rem;
-    margin-bottom: 30px;
-    text-transform: none;
-    margin-top: 20px;
-}
-.about-content .buttons{
-    display:flex;
-    justify-content: space-between;
-}
-.about-content a{
-    background-color: #003147;
-    padding: 1rem 3rem;
-    font-size: 1.5rem;
-    color: white;
-    transition: .2s;
-}
-.about-content a:hover{
-    background: transparent;
-    border: 1px solid var(--secondary-color);
-    color: black;
-}
-.inner-about .content{
-    display: flex;
-    flex-direction: row;
 
 }
-.inner-about .batch{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.appointments a{
+    margin-top: 15px;
+    font-weight: bold;
+    margin-left: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #003147;
+
 
 }
-
-.inner-about .batchy{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Create Account</title>
 
     <link rel="stylesheet" href="account.css">
 
@@ -76,6 +76,27 @@
     </div>
 
     <script src="./account.js" type="module"></script>
+    <script>
+        ///function to toggle when user clicks on get started button
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  ///close the menu when user clicks outside
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show')
+        }
+      }
+    }
+  }
+    </script>
+
 
 </body>
 </html>
