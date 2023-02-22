@@ -116,12 +116,12 @@ html{
 .show {
     display: block;
 }
-.contents{
+/*.contents{
     position: relative;
     background-image: ;
     width: 100%;
     height: 800px;
-    background-image: url(./Images/enric-moreu-rIymmvOq3P8-unsplash.jpg);
+    background-image: url(./Images/Pink\ Simple\ Creative\ And\ Professional\ Medical\ Home\ Logo\ Design\ Template.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -135,14 +135,15 @@ html{
     right: 0;
     bottom: 0;
     background: #003147;
-    opacity: 0.9;
+    opacity: 0.5;
 }
 .appointments{
-    background-color: white;
-    border: transparent;
+    background-color: #003147;
+    border-radius: 30px;
+
     box-shadow: black;
     position: absolute;
-    margin-top: 300px;
+    margin-top: 250px;
     width: 300px;
     margin-left: 50px;
     height: 300px;
@@ -154,8 +155,8 @@ html{
 
     font-size: 80px;
     margin-top: 50px;
-    margin-left: 70px;
-    color: #003147;
+    margin-left: 90px;
+    color: white;
 
 }
 .appointments a{
@@ -164,7 +165,36 @@ html{
     margin-left: 30px;
     font-size: 30px;
     cursor: pointer;
-    color: #003147;
+    color: white;
 
 
+}*/
+.video-background {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-background video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-background .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    z-index: 1;
 }
