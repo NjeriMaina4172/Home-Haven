@@ -150,29 +150,29 @@ html{
     margin-top: 50px;
 }
 .inner-about h1{
-    font-size: 30px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    color: #003147;
+    font-size: 40px;
+
+    color: black;
     margin-left: 50px;
     margin-top: 10px;
 }
 .inner-about p{
-    font-size: 1.9rem;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+
     line-height: 2rem;
     margin-bottom: 30px;
     text-transform: none;
     margin-top: 20px;
     margin-left: 30px;
-    color: #003147;
+    color: black;
 }
 .about-content{
     width: 80%;
 }
+.about-content
 
 .about-content p{
-    font-size: 1.9rem;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
     line-height: 2rem;
     margin-bottom: 30px;
     text-transform: none;
@@ -182,18 +182,7 @@ html{
     display:flex;
     justify-content: space-between;
 }
-.about-content a{
-    background-color: #003147;
-    padding: 1rem 3rem;
-    font-size: 1.5rem;
-    color: white;
-    transition: .2s;
-}
-.about-content a:hover{
-    background: transparent;
-    border: 1px solid var(--secondary-color);
-    color: black;
-}
+
 .inner-about .content{
     display: flex;
     flex-direction: row;

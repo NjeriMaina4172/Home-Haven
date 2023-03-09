@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Appointment</title>
+</head>
+<body>
+
+    <header class="header">
+        <img src="./Images/Pink Simple Creative And Professional Medical Home Logo Design Template.png" id="logo" alt="">
+
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="./aboutUs.html">About</a>
+            <a href="./services.html">Services</a>
+            <a href="#">Doctors</a>
+            <a href="#">Blog</a>
+            <a href="#">Join our caregivers</a>
+            <a href="./faq.html">FAQ</a>
+            <a href="#">Contact</a>
+
+        </nav>
+        <div class="icons">
+            <div id="menubar" class="Fas fa-bars"></div>
+        </div>
+
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Get Started</button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="#">Find a Doctor</a>
+                <a href="account.html">Patients account</a>
+                <a href="#">visit Our Pharmacy</a>
+                <a href="#">Make a Health Rental</a>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="background">
+
+        <img src="./Images/accuray-MFSEP2g4YS0-unsplash.jpg" alt="">
+
+        <div class="appointment">
+            <h3>Make Appointment</h3>
+            <div class="form">
+
+                <form id="appointment-form">
+                    <div class="div">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Name*" required>
+
+                    </div>
+                    <div class="div">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+
+
+                    </div>
+                    <div class="div">
+                        <label for="number">Phone Number</label>
+                        <input type="number" name="number" id="number" placeholder="phone number*" required>
+
+                    </div>
+                    <div>
+                      <label for="service-type">What can we do for you?</label>
+                      <select name="service-type" id="service-type" required>
+                        <option value="">--Please Select--</option>
+                        <option value="nutritional">Nutritional services</option>
+                        <option value="psychiatrist">Psychiatrist</option>
+                        <option value="general">General doctor</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label for="date">Appointment Date</label>
+                      <input type="date" name="date" id="date" required>
+                    </div>
+                    <div>
+                      <label for="time">Appointment Time</label>
+                      <input type="time" name="time" id="time" required>
+                    </div>
+                    <div>
+                      <label for="preference">Preffered Service?</label>
+                      <select name="preference" id="preference" required>
+                        <option value="">--Please Select--</option>
+                        <option value="virtual">Virtual Appointment</option>
+                        <option value="Home-visit">Home visit</option>
+
+                      </select>
+                    </div>
+                    <div>
+                        <label for="notes">If you prefer home visits, give us directions</label>
+                        <input type="text" name="notes" id="notes">
+                      </div>
+                    <button type="submit">Book Appointment</button>
+                  </form>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+        <div class="background-content">
+            <h1>Bringing healthcare <br>to your doorstep</h1>
+            <p>We provide comprehensive in-home healthcare services for individuals <br>who require medical assistance in the comfort of their own home.<br> Our team of healthcare professionals includes doctors, nurses, physical therapists,</p>
+            <a href="#">Read More</a>
+        </div>
+    </div>
+    
+</body>
+</html>
