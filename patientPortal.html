@@ -1,65 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patient Portal</title>
+  <meta charset="UTF-8">
+  <title>Patient Page</title>
 
-    <link rel="stylesheet" href="./patientPortal.css">
+  <link rel="icon" href="img/favicon.png">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- animate CSS -->
+  <link rel="stylesheet" href="css/animate.css">
+  <!-- owl carousel CSS -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <!-- themify CSS -->
+  <link rel="stylesheet" href="css/themify-icons.css">
+  <!-- flaticon CSS -->
+  <link rel="stylesheet" href="css/flaticon.css">
+  <!-- magnific popup CSS -->
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <!-- nice select CSS -->
+  <link rel="stylesheet" href="css/nice-select.css">
+  <!-- swiper CSS -->
+  <link rel="stylesheet" href="css/slick.css">
+  <!-- style CSS -->
+  <link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="patientPortal.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
-    
-    <header class="header">
-        <img src="./Images/Pink Simple Creative And Professional Medical Home Logo Design Template.png" id="logo" alt="">
+<!-- partial:index.partial.html -->
+<header role="banner">
+  <h1>Patient  Panel</h1>
+  <ul class="utilities">
+    <br>
+    <li class="users"><a href="#">My Account</a></li>
+    <li class="logout warn"><a href="">Log Out</a></li>
+  </ul>
+</header>
 
-        <nav class="navbar">
-            <a href="./index.html">Home</a>
-            <a href="./aboutUs.html">About</a>
-            <a href="./services.html">Services</a>
-            <a href="#">Doctors</a>
-            <a href="#">Blog</a>
-            <a href="#">Join our caregivers</a>
-            <a href="./faq.html">FAQ</a>
-            <a href="#">Contact</a>
+<nav role='navigation'>
+  <ul class="main">
+    <li class="dashboard"><a href="#">Dashboard</a></li>
+    <li class="edit"><a href="#">Message Doctor</a></li>
+    <li class="write"><a href="#">Add Doctor</a></li>
 
-        </nav>
-        <div class="icons">
-            <div id="menubar" class="Fas fa-bars"></div>
+    <li class="users"><a href="#">Profile Settings</a></li>
+  </ul>
+</nav>
+
+<main role="main">
+
+  <section class="panel important">
+    <h2>Welcome to your Dashboard,</h2>
+    <ul>
+      <li>Information Panel</li>
+    </ul>
+  </section>
+
+  <section class="panel important">
+    <h2>Health Condition Status</h2>
+      <form action="#" method="post">
+        <div class="twothirds">
+          Patient Name :<br/>
+          <input type="text" name="title" size="40"/><br/><br/>
+          Health Condition :<br/>
+          <input type="text" name="title" size="40"/><br/><br/>
+          Patient Health  Status :<br/>
+          <input type="radio" value="Good">  Good
+          <input type="radio" value="Good">  Deteroriating
+          <input type="radio" value="Good">  Worse
         </div>
-
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Get Started</button>
-            <div class="dropdown-content" id="myDropdown">
-                <a href="#">Find a Doctor</a>
-                <a href="#">Patients account</a>
-                <a href="#">visit Our Pharmacy</a>
-                <a href="#">Make a Health Rental</a>
-            </div>
+        <div>
+          <input type="submit" name="submit" value="Send" />
         </div>
-
-    </header>
-
-    <div class="video-background">
-        <video autoplay muted loop>
-            <source src="./Images/Pink Simple Creative And Professional Medical Home Logo Design Template.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
-        </video>
-        <div class="content">
-        <!-- your content goes here -->
         </div>
-    </div>
+      </form>
+  </section>
 
-
-
-
-
-   <script src="./patientPortal.js"></script>
+</main>
+<!-- partial -->
 
 </body>
 </html>

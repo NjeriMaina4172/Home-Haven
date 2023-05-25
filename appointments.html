@@ -5,6 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Make Appointment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="appointments.css">
+
+    <link rel="icon" href="img/favicon.png">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- animate CSS -->
+  <link rel="stylesheet" href="css/animate.css">
+  <!-- owl carousel CSS -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <!-- themify CSS -->
+  <link rel="stylesheet" href="css/themify-icons.css">
+  <!-- flaticon CSS -->
+  <link rel="stylesheet" href="css/flaticon.css">
+  <!-- magnific popup CSS -->
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <!-- nice select CSS -->
+  <link rel="stylesheet" href="css/nice-select.css">
+  <!-- swiper CSS -->
+  <link rel="stylesheet" href="css/slick.css">
+  <!-- style CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-auth.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-database.js" type="module"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -12,14 +43,10 @@
         <img src="./Images/Pink Simple Creative And Professional Medical Home Logo Design Template.png" id="logo" alt="">
 
         <nav class="navbar">
-            <a href="#">Home</a>
+            <a href="./index.html">Home</a>
             <a href="./aboutUs.html">About</a>
             <a href="./services.html">Services</a>
-            <a href="#">Doctors</a>
-            <a href="#">Blog</a>
-            <a href="#">Join our caregivers</a>
-            <a href="./faq.html">FAQ</a>
-            <a href="#">Contact</a>
+            <a href="./contact.html">Contact</a>
 
         </nav>
         <div class="icons">
@@ -29,8 +56,8 @@
         <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">Get Started</button>
             <div class="dropdown-content" id="myDropdown">
-                <a href="#">Find a Doctor</a>
-                <a href="account.html">Patients account</a>
+                <a href="#">Make an appointment</a>
+                <a href="./account.html">My Home Haven account</a>
                 <a href="#">visit Our Pharmacy</a>
                 <a href="#">Make a Health Rental</a>
             </div>
@@ -39,87 +66,182 @@
     </header>
 
     <div class="background">
-
-        <img src="./Images/accuray-MFSEP2g4YS0-unsplash.jpg" alt="">
-
-        <div class="appointment">
-            <h3>Make Appointment</h3>
-            <div class="form">
-
-                <form id="appointment-form">
-                    <div class="div">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name" placeholder="Name*" required>
-
-                    </div>
-                    <div class="div">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Email" required>
+        <h1>Book an appointment</h1>
+    </div>
 
 
-                    </div>
-                    <div class="div">
-                        <label for="number">Phone Number</label>
-                        <input type="number" name="number" id="number" placeholder="phone number*" required>
+    <div class="form">
 
-                    </div>
-                    <div>
-                      <label for="service-type">What can we do for you?</label>
-                      <select name="service-type" id="service-type" required>
-                        <option value="">--Please Select--</option>
-                        <option value="nutritional">Nutritional services</option>
-                        <option value="psychiatrist">Psychiatrist</option>
-                        <option value="general">General doctor</option>
-                      </select>
-                    </div>
-                    <div>
-                      <label for="date">Appointment Date</label>
-                      <input type="date" name="date" id="date" required>
-                    </div>
-                    <div>
-                      <label for="time">Appointment Time</label>
-                      <input type="time" name="time" id="time" required>
-                    </div>
-                    <div>
-                      <label for="preference">Preffered Service?</label>
-                      <select name="preference" id="preference" required>
-                        <option value="">--Please Select--</option>
-                        <option value="virtual">Virtual Appointment</option>
-                        <option value="Home-visit">Home visit</option>
-
-                      </select>
-                    </div>
-                    <div>
-                        <label for="notes">If you prefer home visits, give us directions</label>
-                        <input type="text" name="notes" id="notes">
-                      </div>
-                    <button type="submit">Book Appointment</button>
-                  </form>
+        <form id="appointment-form">
+            <div class="div">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Name*" required>
 
             </div>
+            <div class="div">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
 
 
+            </div>
+            <div class="div">
+                <label for="number">Phone Number</label>
+                <input type="number" name="number" id="number" placeholder="phone number*" required>
 
+            </div>
+            <div>
+              <label for="service-type">What can we do for you?</label>
+              <select name="service-type" id="service-type" required>
+                <option value="">--Please Select--</option>
+                <option value="Consultation">Consultation</option>
+                <option value="nutrition">Nutritional services</option>
+                <option value="psychiatry">psychiatry and Behavioral health</option>
+                <option value="Physiotherapy">Physiotherapy</option>
+                <option value="pediatrics-therapy">pediatric therapy</option>
+                <option value="speech&language-therapy">speech and language therapy</option>
+                <option value="occupational-therapy">occupational therapy</option>
+                <option value="Massage-therapy">Massage therapy</option>
+                <option value="Genetic-counseling">Genetic counseling</option>
+                <option value="Nurse-aide">Nurse aide</option>
+              </select>
+            </div>
+            <div>
+              <label for="date">My Appointment Date</label>
+              <input type="date" name="date" id="date" required>
+            </div>
+            <div>
+              <label for="time">My Appointment Time</label>
+              <input type="time" name="time" id="time" required>
+            </div>
+            <div>
+              <label for="preference">The preffered Service?</label>
+              <select name="preference" id="preference" required>
+                <option value="">--Please Select--</option>
+                <option value="virtual">Virtual appointment</option>
+                <option value="homevisit">Home visit</option>
 
+              </select>
+            </div>
+            <div>
+                <label for="notes">If home visit preffered, direct us</label>
+                <input type="text" name="notes" id="notes">
+              </div>
+            <button type="submit">Book Appointment</button>
+          </form>
 
-
-
-
-
-
-
-
-
-
-
-        </div>
-
-        <div class="background-content">
-            <h1>Bringing healthcare <br>to your doorstep</h1>
-            <p>We provide comprehensive in-home healthcare services for individuals <br>who require medical assistance in the comfort of their own home.<br> Our team of healthcare professionals includes doctors, nurses, physical therapists,</p>
-            <a href="#">Read More</a>
-        </div>
     </div>
+    <!-- footer part start-->
+  <footer class="footer-area">
+    <div class="footer section_padding">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-xl-2 col-md-4 col-sm-6 single-footer-widget">
+            <a href="#" class="footer_logo"> <img src="img/logo.png" alt="#"> </a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+            <div class="social_logo">
+              <a href="#"><i class="ti-facebook"></i></a>
+              <a href="#"> <i class="ti-twitter"></i> </a>
+              <a href="#"><i class="ti-instagram"></i></a>
+              <a href="#"><i class="ti-skype"></i></a>
+            </div>
+          </div>
+          <div class="col-xl-2 col-sm-6 col-md-4 single-footer-widget">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Department</a></li>
+              <li><a href="#"> Online payment</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Department</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-2 col-sm-6 col-md-4 single-footer-widget">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="#">In the community</a></li>
+              <li><a href="#">IU health foundation</a></li>
+              <li><a href="#">Family support </a></li>
+              <li><a href="#">Business solution</a></li>
+              <li><a href="#">Community clinic</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-2 col-sm-6 col-md-6 single-footer-widget">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Lights were season</a></li>
+              <li><a href="#"> Their is let wherein</a></li>
+              <li><a href="#">which given over</a></li>
+              <li><a href="#">Without given She</a></li>
+              <li><a href="#">Isn two signs think</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-3 col-sm-6 col-md-6 single-footer-widget">
+            <h4>Newsletter</h4>
+            <p>Seed good winged wherein which night multiply
+              midst does not fruitful</p>
+            <div class="form-wrap" id="mc_embed_signup">
+              <form target="_blank"
+                action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                method="get" class="form-inline">
+                <input class="form-control" name="EMAIL" placeholder="Your Email Address"
+                  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address '" required=""
+                  type="email">
+                <button class="click-btn btn btn-default text-uppercase"> <i class="ti-angle-right"></i>
+                </button>
+                <div style="position: absolute; left: -5000px;">
+                  <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+                </div>
+
+                <div class="info"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright_part">
+      <div class="container">
+        <div class="row align-items-center">
+          <p class="footer-text m-0 col-lg-8 col-md-12"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</p>
+          <div class="col-lg-4 col-md-12 text-center text-lg-right footer-social">
+            <a href="#"><i class="ti-facebook"></i></a>
+            <a href="#"> <i class="ti-twitter"></i> </a>
+            <a href="#"><i class="ti-instagram"></i></a>
+            <a href="#"><i class="ti-skype"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- footer part end-->
+
+  <!-- jquery plugins here-->
+
+  <script src="js/jquery-1.12.1.min.js"></script>
+  <!-- popper js -->
+  <script src="js/popper.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- owl carousel js -->
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.nice-select.min.js"></script>
+  <!-- contact js -->
+  <script src="js/jquery.ajaxchimp.min.js"></script>
+  <script src="js/jquery.form.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/mail-script.js"></script>
+  <script src="js/contact.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+
+    <script src="./index.js"></script>
+    <script src="./appointment.js" type="module"></script>
+
     
 </body>
 </html>

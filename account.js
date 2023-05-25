@@ -86,7 +86,7 @@ createacctbtn.addEventListener("click", () => {
     createUserWithEmailAndPassword(auth, signupEmail, signupPassword)
       .then(() => {
         window.alert("Success! Account Created");
-        window.location = "./patientPortal.html";
+        window.location = "patientportal.html";
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -107,7 +107,7 @@ submitButton.addEventListener("click", function () {
     signInWithEmailAndPassword(auth, email, password)
       .then(() => {
         window.alert("Success! Welcome Back");
-        window.location = "patientPortal.html";
+        window.location = "patientportal.html";
       })
       .catch((error) => {
         const errorMessage = error.message;

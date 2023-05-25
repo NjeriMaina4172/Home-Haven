@@ -117,42 +117,20 @@ html{
     display: block;
 }
 .background{
-    background-color: #f2f2f2;
-    position: relative;
-
-
-}
-.background > img{
-    margin-top: 150px;
-    margin-left: 5%;
-    width: 50%;
-    height: 50%;
-    border-top-left-radius: 60px;
-    border-top-right-radius: 80px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 80px;
+    height: 550px;
+    background-image:url(./Images/02.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding-top: 6%;
     position: relative;
 }
-.background .appointment{
-    background-color: var(--main-color);
-    position:absolute;
-    width: 55%;
-    height: 30%;
-    margin-left: 30%;
-    top: 80%;
-}
-
-
-.appointment-desc{
-    padding: 20px;
-    margin-top: 40px;
-    font-size: 15px;
-    justify-content: center;
-    padding: 4rem;
-    display: flex;
-    max-width: 900px;
-
-
+.background h1{
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 200px;
+    margin-left: 100px;
 }
 
 
@@ -160,7 +138,7 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
+    background-color: var(--main-color);
     border: none;
     box-shadow: 0 6px 12px 0 rgba(0,0.2,0,0.4);
     max-width: 700px;
@@ -177,9 +155,10 @@ html{
 }
 
 #appointment-form label {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 5px;
+    color: #ddd;
 
 }
 
@@ -188,18 +167,18 @@ html{
     padding: 10px;
     border-radius: 5px;
     border: 1px solid black;
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-top: 5px;
     width: 30rem;
 
 }
 
 #appointment-form button[type="submit"] {
-    background-color: gold;
+    background-color:#ff5d22;
     border: none;
     color: black;
-    padding: 10px 20px;
-    font-size: 1rem;
+    padding: 15px 20px;
+    font-size: 1.5rem;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
@@ -208,5 +187,5 @@ html{
 
 #appointment-form button[type="submit"]:hover {
     background-color: black;
-    color: gold;
+    color:#ff5d22;
 }
